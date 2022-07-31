@@ -1,0 +1,4 @@
+namespace: myrails
+resources:
+  - service.yaml
+  - deployment.yaml
