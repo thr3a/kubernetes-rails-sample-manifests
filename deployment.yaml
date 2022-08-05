@@ -12,8 +12,8 @@ spec:
         app: rails-app
     spec:
       containers:
-      - name: rails-app
-        image: thr3a/myrails:latest
-        resources: {}
-        ports:
-        - containerPort: 3000
+        - name: rails-app
+          image: ghcr.io/thr3a/rails-sample:dummy
+          resources: {}
+          ports:
+            - containerPort: 3000
