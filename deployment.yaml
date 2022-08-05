@@ -17,3 +17,9 @@ spec:
           resources: {}
           ports:
             - containerPort: 3000
+          env:
+          - name: RAILS_MASTER_KEY
+            valueFrom:
+              secretKeyRef:
+                name: rails
+                key: rails-master-key
